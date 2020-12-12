@@ -1,0 +1,58 @@
+body,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.header {
+    border-bottom: 1px solid black;
+}
+
+.sidebar {
+    height: 100vh;
+    min-width: 150px;
+    width: 10%;
+    border-right: 1px solid black;
+}
+
+.content {
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    text-align: center;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.edit-btn {
+    margin-left: auto;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.edit-btn:hover {
+    background-color: rgb(201, 200, 200);
+}
+
+.btn-add {
+    margin-right: auto;
+
+    width: 350px;
+    height: 50px;
+}
+
+#index {
+    opacity: 0;
+    position: absolute;
+}
