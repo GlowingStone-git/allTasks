@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <title>T-task</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="header-nav">
+                <img src="./assets/icon/header-logo.svg" alt="companyLogo">
+                <a href="#" class="header-nav-link">Main</a>
+                <a href="#" class="header-nav-link">Gallery</a>
+                <a href="#" class="header-nav-link">News</a>
+                <a href="#" class="header-nav-link">Profile</a>
+
+                <div class="header-link-wrapper">
+                    <a href="tel:+544349000000">+544 3490 00000</a>
+                    <p>Звони скорее!</p>
+                </div>
+            </nav>
+            <h5 class="header-search">Найдено 349 котов</h5>
+        </div>
+    </header>
+
+    <section class="products">
+        <div class="container">
+            <div class="products-sort-wrapper">
+                <h1>Сортировать по:</h1>
+                <button id="sort-price-btn">Цене</button>
+                <label id="sort-price-label"><input type="checkbox" class="sort-checkbox" id="sort-price" name="sort" value="yes"></label>
+                <button id="sort-age-btn">Возрасту</button>
+                <label id="sort-age-label"><input type="checkbox" class="sort-checkbox" id="sort-age" name="sort" value="yes"></label>
+            </div>
+            <div class="card-row">
+                <div class="card card-discount" data-price="30000" data-age="2">
+                    <img class="card-like" src="../assets/icon/like-icon.svg" alt="">
+                    <img class="card-img" src="./assets/img/product-card-img-2.jpg" alt="product-img">
+                    <div class="card-content">
+                        <h3>Кот полосатый</h3>
+                        <div class="card-wrapper">
+                            <p>Коричневый<br> окрас</p>
+                            <p><span>2 мес.</span><br> Возраст</p>
+                            <p><span>4</span><br>Кол-во лап</p>
+                        </div>
+                        <p class="card-price">30 000 руб.</p>
+                    </div>
+                    <button class="card-btn">Купить</button>
+                </div>
+
+                <div class="card" data-price="40000" data-age="3">
+                    <img class="card-like" src="../assets/icon/like-icon.svg" alt="">
+                    <img class="card-img" src="./assets/img/product-card-img-3.jpg" alt="product-img">
+                    <div class="card-content">
+                        <h3>Кот полосатый</h3>
+                        <div class="card-wrapper">
+                            <p>Коричневый<br> окрас</p>
+                            <p><span>3 мес.</span><br> Возраст</p>
+                            <p><span>4</span><br>Кол-во лап</p>
+                        </div>
+                        <p class="card-price">40 000 руб.</p>
+                    </div>
+                    <button class="card-btn card-btn-soldout">Продан</button>
+                </div>
+
+                <div class="card" data-price="20000" data-age="2">
+                    <img class="card-like" src="../assets/icon/like-icon.svg" alt="">
+                    <img class="card-img" src="./assets/img/product-card-img-1.jpg" alt="product-img">
+                    <div class="card-content">
+                        <h3>Кот полосатый</h3>
+                        <div class="card-wrapper">
+                            <p>Коричневый<br> окрас</p>
+                            <p><span>2 мес.</span><br> Возраст</p>
+                            <p><span>4</span><br>Кол-во лап</p>
+                        </div>
+                        <p class="card-price">20 000 руб.</p>
+                    </div>
+                    <button class="card-btn">Купить</button>
+                </div>
+
+                <div class="card" data-price="25000" data-age="2">
+                    <img class="card-like" src="../assets/icon/like-icon.svg" alt="">
+                    <img class="card-img" src="./assets/img/product-card-img-2.jpg" alt="product-img">
+                    <div class="card-content">
+                        <h3>Кот полосатый</h3>
+                        <div class="card-wrapper">
+                            <p>Коричневый<br> окрас</p>
+                            <p><span>2 мес.</span><br> Возраст</p>
+                            <p><span>4</span><br>Кол-во лап</p>
+                        </div>
+                        <p class="card-price">25 000 руб.</p>
+                    </div>
+                    <button class="card-btn">Купить</button>
+                </div>
+
+                <div class="card card-discount" data-price="30000" data-age="2">
+                    <img class="card-like" src="../assets/icon/like-icon.svg" alt="">
+                    <img class="card-img" src="./assets/img/product-card-img-1.jpg" alt="product-img">
+                    <div class="card-content">
+                        <h3>Кот полосатый</h3>
+                        <div class="card-wrapper">
+                            <p>Коричневый<br> окрас</p>
+                            <p><span>2 мес.</span><br> Возраст</p>
+                            <p><span>4</span><br>Кол-во лап</p>
+                        </div>
+                        <p class="card-price">30 000 руб.</p>
+                    </div>
+                    <button class="card-btn">Купить</button>
+                </div>
+
+                <div class="card" data-price="10000" data-age="2">
+                    <img class="card-like" src="../assets/icon/like-icon.svg" alt="">
+                    <img class="card-img" src="./assets/img/product-card-img-3.jpg" alt="product-img">
+                    <div class="card-content">
+                        <h3>Кот полосатый</h3>
+                        <div class="card-wrapper">
+                            <p>Коричневый<br> окрас</p>
+                            <p><span>2 мес.</span><br> Возраст</p>
+                            <p><span>4</span><br>Кол-во лап</p>
+                        </div>
+                        <p class="card-price">10 000 руб.</p>
+                    </div>
+                    <button class="card-btn card-btn-soldout">Продан</button>
+                </div>
+            </div>
+
+            <div class="products-btn-wrapper">
+                <button class="products-btn-add">Показать еще 20</button>
+            </div>
+        </div>
+    </section>
+
+    <span class="scroll-btn"><a><img src="./assets/icon/scroll-btn-arrow.svg" alt="Up"></a></span>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-content-wrapper">
+                    <h3>Успей купить!</h3>
+                    <p>Подпишись и успей<br> словить все акции</p>
+                </div>
+                <form class="footer-subscribe">
+                    <div class="footer-subscribe-wrapper">
+                        <input type="text" placeholder="Email" id="form-input">
+                        <button id="form-btn">Подписаться</button>
+                    </div>
+                    <div class="footer-subscribe-wrapper">
+                        <input type="checkbox" class="custom-checkbox" id="subscribe" name="subscribe" value="yes">
+                        <label for="subscribe">Подписаться на новости</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="index.js"></script></html>
